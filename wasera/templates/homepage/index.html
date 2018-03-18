@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Wasera</title>
+  <link rel="shortcut icon" type="image/png" href="{% static 'homepage/images/logo.png' %}">
+  <link rel="stylesheet" href="{% static 'homepage/css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'homepage/css/master.css' %}">
+<script type="text/javascript">
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</head>
+<body>
+
+<!-- navbar starts -->
+<div id="myNav" class="overlay" style='z-index:1000;width:100%;'>
+  <a  class="closebtn" "><span style='color:#f1f1f1;' >&times;<span></a>
+    <!-- onclick="closeNav() -->
+  <div class="overlay-content">
+    <a href="{% url 'homepage:soon' %}">Login/Sign Up</a>
+    <a href="{% url 'homepage:soon' %}">HomeOwner</a>
+    <a href="{% url 'homepage:soon' %}">Booking</a>
+    <a href="{% url 'homepage:soon' %}">About Us</a>
+    <a href="{% url 'homepage:soon' %}">Privacy Policy</a>
+<a href="{% url 'homepage:register' %}"><h1>Register Home</h1></a>
+
+  </div>
+</div>
+<div>
+  <nav class="navbar navbar-light  nav_div" >
+    <a class="navbar-brand" href="#" >
+      <img class='logo' src="{{ 'templates/comingsoon.html' }}" alt="wasera_logo">
+      <span>Wasera</span>
+    </a>
+    <span id='ham' style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </nav>
+</div>
+
+<!-- navbar  ends -->
+
+<!-- home div starts -->
+<div class="home_div" id='home_div'>
+<img src="{% static 'homepage/images/SPRTT1N.jpg' %}">
+</div>
+
+<!-- home div ends -->
+<!-- popular_areas starts -->
+<hr>
+<h1>Popular Areas</h1>
+<div class="p_areas" id='p_area'>
+  <div class="area">
+    <img src="{% static 'homepage/images/01.jpg' %}" alt="">
+  </div>
+  <div class="area">
+    <img src="{% static 'homepage/images/02.jpg' %}" alt="">
+  </div>
+  <div class="area">
+    <img src="{% static 'homepage/images/03.jpg' %}" alt="">
+  </div>
+  <div class="area">
+    <img src="{% static 'homepage/images/04.jpg' %}" alt="">
+  </div>
+  <div class="area">
+    <img src="{% static 'homepage/images/05.jpg' %}" alt="">
+  </div>
+</div>
+<!-- popular div ends -->
+
+ <!-- attractions starts -->
+<hr>
+<h1>Special Attractions</h1>
+<div class="att_div">
+<div class="area area_att">
+  <img src="{% static 'homepage/images/03.jpg' %}" alt="">
+</div>
+<div class="area area_att">
+  <img src="{% static 'homepage/images/07.jpg' %}" alt="">
+</div>
+<div class="area area_att">
+  <img src="{% static 'homepage/images/04.jpg' %}" alt="">
+</div>
+<div class="area area_att">
+<img src="{% static 'homepage/images/02.jpg' %}" alt="">
+</div>
+<div class="area area_att">
+<img src="{% static 'homepage/images/01.jpg' %}" alt="">
+</div>
+</div>
+
+<!-- attractions ends -->
+
+<!-- what we offer -->
+<hr>
+<h1>What we offer?</h1>
+<div class="our_offer">
+  <div class="area items">
+    <img src="{% static 'homepage/images/02.jpg' %}" alt="" style='border-radius:30px 0 0 30px;'>
+  </div>
+  <div class="area items">
+<img src="{% static 'homepage/images/01.jpg' %}" alt="">
+  </div>
+  <div class="area items">
+<img src="{% static 'homepage/images/06.jpg' %}" alt="" style='border-radius:0 30px  30px 0;'>
+  </div>
+</div>
+<!-- what we offer ends -->
+
+<!-- footer starts -->
+<!-- footer ends -->
+
+  <script src="{% static 'homepage/js/smooth_scroll.js' %}"></script>
+  <!-- <script src="{% static 'homepage/js/bootstrap.js' %}"></script> -->
+  <script src="{% static 'homepage/js/jquery.js' %}"></script>
+</body>
+</html>

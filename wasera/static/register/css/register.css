@@ -1,0 +1,60 @@
+body{
+  background: linear-gradient(45deg,#da4453,#89216b );
+  font-size:30px;
+  color:white;
+  width:100%;
+}
+.reg_form{
+  padding:10%;
+  padding-left:50px;
+}
+.reg_form input ,#id_property_description{
+  padding:30px;
+  margin-top:20px;
+  width:100%;
+  height:80px;
+  font-size:40px;
+  font-weight:bold;
+  border-radius:10px;
+  border:none;
+}
+.reg_form select{
+  height:80px;
+  width:90%;
+  border-radius:10px;
+  font-size:40px;
+  color:black;
+  background-color:white;
+  font-weight:bold;
+}
+#id_negotiable,#id_pics_from,#id_pics_till,#id_number_of_pics,#id_country_code{
+  width:40%;
+  padding-left:10px;
+}
+.reg_form label{
+  font-size:40px;
+  padding-top:50px;
+  padding-left:0px;
+  padding-right:0px;
+  left:0px;
+  width:50%;
+  vertical-align:center;
+}
+#id_negotiable{
+  height:50px;
+}
+#id_property_description{
+  height:350px;
+  font-weight:normal;
+}
+#done{
+  height:100%;
+  width:80%;
+  margin-left:10%;
+  margin-top:100px;
+}
+.top_div{
+  position:fixed;
+  width:100%;
+  background-color:white;
+}

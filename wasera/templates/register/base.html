@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+  </head>
+<link rel="stylesheet" href="{% static 'homepage/css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'homepage/css/master.css' %}">
+<link rel="stylesheet" href="{% static 'register/css/register.css' %}">
+<body>
+    <hr><hr>
+    <h1 style='font-size:80px;'><img src="{% static 'homepage/images/logo.png' %}" style='height:150px;width:150px'>Wasera</h1>
+    <h2 style='text-align:right;padding-right:20px;'>Anytime Anywhere....</h2>
+    <hr>
+    <hr><hr>
+    {% block body_block %}
+    {% endblock body_block %}
+  </body>
+</html>
